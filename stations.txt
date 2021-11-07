@@ -1,0 +1,53 @@
+# You can radio staions .pls/.m3u here
+#Station name		#URL
+# Lofi Stations
+Tekno1			http://212.83.149.66:8591/listen.pls?sid=1&t=.m3u
+Planet LoFi		http://198.245.60.88:8080/listen.pls?sid=1&t=.m3u
+Ambient Modern		http://163.172.169.217:80/listen.pls?sid=1&t=.m3u
+Kraftphunk		http://62.210.10.4:8096/listen.pls?sid=1&t=.m3u
+AutoDJ lofi		http://119.235.255.206:8158/listen.pls?sid=1&t=.m3u
+# Class Rock Stations
+Classic Rock Florida 	http://us4.internet-radio.com:8258/listen.pls&t=.m3u
+danceradiouk		http://uk7.internet-radio.com:8226/live.m3u&t=.m3u
+Majestic Jukebox Radio	http://uk3.internet-radio.com:8405/live.m3u&t=.m3u
+Classic Rock Radio	http://us5.internet-radio.com:8267/listen.pls&t=.m3u
+TOP 80 radio		http://uk5.internet-radio.com:8011/listen.pls&t=.m3u
+# 80s 90s Radio Stations
+Magic Oldies Florida	http://uk4.internet-radio.com:8004/listen.pls&t=.m3u
+Classic Hits Global	http://us2.internet-radio.com:8075/listen.pls&t=.m3u
+The Cube Retro Radio	http://us3.internet-radio.com:8107/listen.pls&t=.m3u
+Real Dance Radio	http://uk6.internet-radio.com:8096/live.m3u&t=.m3u
+The Hit Man Radio	http://uk2.internet-radio.com:8121/listen.pls&t=.m3u
+PARTY VIBE MUSIC	http://uk6.internet-radio.com:8124/listen.pls&t=.m3u
+The Groove		http://uk7.internet-radio.com:8352/listen.pls&t=.m3u
+Joy Radio		http://uk5.internet-radio.com:8174/listen.pls&t=.m3u
+80ssoundtracks		http://uk5.internet-radio.com:8256/listen.pls&t=.m3u
+# Hip Hop Radio Stations
+Pigpen Radio		http://uk6.internet-radio.com:8213/listen.pls&t=.m3u
+Time 2 Dance Radio	http://uk6.internet-radio.com:8332/listen.pls&t=.m3u
+Power 95 Bermuda	http://us3.internet-radio.com:8026/live.m3u&t=.m3u
+Riddim1 Radio		http://us2.internet-radio.com:8183/listen.pls&t=.m3u
+# Instrumental Radio Stations
+Musical Venture Radio	http://us3.internet-radio.com:8614/listen.pls&t=.m3u
+DREAM MIX RADIO		http://us3.internet-radio.com:8226/live.m3u&t=.m3u
+GOLD INSTRUMENTAL	http://199.233.234.34:25373/listen.pls?sid=1&t=.m3u
+Music Lake		http://104.251.118.50:8626/listen.pls?sid=1&t=.m3u
+Seeburg 1000		http://74.82.59.197:8351/listen.pls?sid=1&t=.m3u
+Instrumental Radio	http://178.32.62.163:8599/listen.pls?sid=1&t=.m3u
+majoras			http://163.172.77.142:8006/listen.pls?sid=1&t=.m3u
+# Ambient Radio Stations
+Pink Noise Radio	http://uk1.internet-radio.com:8004/listen.pls&t=.m3u
+RADIO ESTILO LEBLON	http://us4.internet-radio.com:8193/listen.pls&t=.m3u
+Ambient Radio .org	http://uk2.internet-radio.com:31491/listen.pls&t=.m3u
+# Drum And Bass Radio Stations
+PARTY VIBE RADIO	http://www.partyviberadio.com:8004/listen.pls?sid=1&t=.m3u
+The Zone - Dublin	http://uk1.internet-radio.com:8355/listen.pls&t=.m3u
+Undergroundfm		http://uk1.internet-radio.com:8118/listen.pls&t=.m3u
+# Electronic Radio Stations
+ MoveDaHouse		http://uk7.internet-radio.com:8000/listen.pls&t=.m3u
+Moon Mission Recordings http://uk5.internet-radio.com:8306/listen.pls&t=.m3u
+Esvive Radio		http://uk2.internet-radio.com:8277/listen.pls&t=.m3u
+# Dubstep Radio Stations
+PulseEDM		http://pulseedm.cdnstream1.com:8124/1373_128.m3u&t=.m3u
+Nebula			http://178.32.62.167:8507/listen.pls?sid=1&t=.m3u
+Sensimedia 		http://144.217.203.184:8229/listen.pls?sid=1&t=.m3u	
