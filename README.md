@@ -1,6 +1,5 @@
 # dRadio
-A simple script to play online radio stations in background using.
-This script is used to stream online media sources like online radios stations or youtube videos using bash, and you can add, remove, or select your media source from the existing once. 
+A simple script to play online radio stations in background. This script is used to stream online media sources like online radios stations or youtube videos using bash, and you can add, remove, or select your media source from the existing once. 
 
 ## Requirements
 - [mpv](https://mpv.io/)
