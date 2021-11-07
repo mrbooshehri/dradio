@@ -24,7 +24,7 @@ url_pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6
 
 # Functions
 play(){
-  nohup mpv $1 --stop-playback-on-init-failure --no-video 2&>/dev/null &
+  nohup mpv --title="dradio" $1 --stop-playback-on-init-failure --no-video 2&>/dev/null &
   case $2 in
     "dmenu") 
     	[[ $? -eq 0 ]] && notify-send "dradio" "[ $choice ] station is playing" || notify-send "dradio" "Error in playing with mpv" ;;
@@ -69,7 +69,7 @@ case $1 in
   ;;
   # Stop playing 
   "-s"|"--stop") 
-  	killall mpv 2&>/dev/null ;;
+	kill $(ps aux | grep "\-\-title=dradio" | awk '{print $2}') ;;
   "-u"|"--url") 
 	[[ $2 =~ $url_pattern ]] && play $2 url || echo "Invalid URL. Please see help" ;;
   "-v"|"--version") echo "dradio V0.1" ;;
