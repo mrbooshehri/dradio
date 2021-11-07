@@ -24,6 +24,7 @@ url_pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6
 
 # Functions
 play(){
+  stop
   nohup mpv --title="dradio" $1 --stop-playback-on-init-failure --no-video 2&>/dev/null &
   case $2 in
     "dmenu") 
@@ -36,6 +37,11 @@ play(){
   esac
 }
 
+stop(){
+  psid=$(ps aux | grep "\-\-title=dradio" | awk '{print $2}')
+  [ ! -z "$psid" ] && kill "$psid"
+}
+
 case $1 in
   # Add new station
   "-a"|"--add") 
@@ -43,8 +49,8 @@ case $1 in
     	read -e -p "Enter station URL: " url
 	echo -e "$name\t\t$url" >> $dir_home/stations.txt
   ;;
+  # List stations from ~/.config/dradio/stations.txt in dmenu and play the selected one in mpv
   "-d"|"--dmenu")
-    	# List stations from ~/.config/dradio/stations.txt in dmenu and play the selected one in mpv
 	choice=$(grep -v '^#' "$dir_home/stations.txt" | awk -F '\t' '{print $1}' | dmenu -l 15 -p "Radio stations: ")
 	[ -z "$choice" ] && exit 1
 	station_url=$(grep "$choice" "$dir_home/stations.txt" | awk -F '\t' '{print $(NF)}')
@@ -69,21 +75,24 @@ case $1 in
   ;;
   # Stop playing 
   "-s"|"--stop") 
-	kill $(ps aux | grep "\-\-title=dradio" | awk '{print $2}') ;;
+  	stop ;;
+	#kill $(ps aux | grep "\-\-title=dradio" | awk '{print $2}') ;;
   "-u"|"--url") 
 	[[ $2 =~ $url_pattern ]] && play $2 url || echo "Invalid URL. Please see help" ;;
   "-v"|"--version") echo "dradio V0.1" ;;
   "-h"|"--help"|*) 
     	cat << EOF
--l, --list		List of radio staions
--d, --delete		Show stations list in dmenu
--f, --fzf		Show stations list in fzf
--s, --stop		Stop mpv player
--a, --add 		Add staion
--r, --remove		Remove station
--u, --url		Play input URL
--h, --help		Show help
--v, --version		Show version
+Usage: dradio [options]
+Options:
+  -l, --list		List of radio staions
+  -d, --delete		Show stations list in dmenu
+  -f, --fzf		Show stations list in fzf
+  -s, --stop		Stop mpv player
+  -a, --add 		Add staion
+  -r, --remove		Remove station
+  -u, --url		Play input URL
+  -h, --help		Show help
+  -v, --version		Show version
 EOF
   ;;
 esac
