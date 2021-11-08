@@ -67,4 +67,4 @@ chmod +x /usr/local/bin/dradio
 	![list](./screenshots/stations_list.png) 
 	
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome, just fork the project made your changes and submit your request.
