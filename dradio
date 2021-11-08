@@ -77,7 +77,9 @@ case $1 in
   "-s"|"--stop") 
   	stop ;;
   # Get status
-  "-S"|"--status") echo "Now playing: $(grep $(ps aux | grep "\-\-title=dradio" | awk '{print $13}') ~/.config/dradio/stations.txt)" ;;
+  "-S"|"--status") 
+	active=$(ps aux | grep "\-\-title=dradio" | awk '{print $13}')
+	[ -z "$active" ] && echo "There is no active starion." || echo "Now playing: $(grep $active $dir_home/stations.txt)" ;;
   "-u"|"--url") 
 	[[ $2 =~ $url_pattern ]] && play $2 url || echo "Invalid URL. Please see help" ;;
   "-v"|"--version") echo "dradio V0.2" ;;
