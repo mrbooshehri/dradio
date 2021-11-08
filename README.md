@@ -22,12 +22,26 @@ chmod +x /usr/local/bin/dradio
 ```
 **Note:** The stations file (```stations.txt```) is under ```~/.config/dradio```, you can manipulate it directly.
 
+## Commands
+```
+  -l, --list		List of radio staions
+  -d, --delete		Show stations list in dmenu
+  -f, --fzf		Show stations list in fzf
+  -s, --stop		Stop mpv player
+  -S, --status		Show the now playing station info
+  -a, --add 		Add staion
+  -r, --remove		Remove station
+  -u, --url		Play input URL
+  -h, --help		Show help
+  -v, --version		Show version
+```
+
 ## Usage
 * Play from existing stations
 	* dmenu: ```dradio -d```
-		 
+ 
 		![dmenu](./screenshots/dmenu.png) 
-	* 
+ 
 	* fzf: ```dradio -f```
 		
 		![fzf](./screenshots/fzf.png) 
@@ -37,6 +51,8 @@ chmod +x /usr/local/bin/dradio
 	![url](./screenshots/play_url.png) 
 
 * Stop player: ```dradio -s```
+ 
+* Show the now playing station info: ```dradio -S```
 	
 * Add station:```dradio -a```
 
