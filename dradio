@@ -88,7 +88,7 @@ case $1 in
 Usage: dradio [options]
 Options:
   -l, --list		List of radio staions
-  -d, --delete		Show stations list in dmenu
+  -d, --dmenu		Show stations list in dmenu
   -f, --fzf		Show stations list in fzf
   -s, --stop		Stop mpv player
   -S, --status		Show the now playing station info
